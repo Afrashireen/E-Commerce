@@ -3,7 +3,7 @@ import React from 'react';
 import ReactDOM from 'react-dom/client';
 import { BrowserRouter } from 'react-router-dom';
 import './index.css'; 
-import './app.css';   // Add this line to include app.css
+import './app.css';  
 import App from './App';
 import 'bootstrap-icons/font/bootstrap-icons.css';
 
