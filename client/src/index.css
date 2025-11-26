@@ -1,0 +1,102 @@
+/* Global Theme */
+body {
+  font-family: 'Poppins', sans-serif;
+  margin: 0;
+  background-color: #ffffff !important;   /* White background */
+}
+
+/* Purple Navbar */
+.navbar {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  padding: 1rem 2rem;
+  background-color: #6A0DAD !important;   /* Purple */
+  color: white !important;
+  box-shadow: 0 2px 4px rgba(0,0,0,0.2);
+  position: sticky;
+  top: 0;
+  z-index: 1000;
+}
+
+/* Navbar Text */
+.navbar h3 {
+  font-weight: 700;
+  font-size: 1.7rem;
+  color: #ffffff !important;
+  letter-spacing: 1px;
+}
+
+/* Search input inside navbar */
+.navbar .form-control {
+  border: none !important;
+  border-radius: 0;
+}
+
+.input-group-text {
+  border: none !important;
+}
+
+/* Purple Buttons */
+.btn-purple,
+.btn-primary {
+  background-color: #6A0DAD !important;
+  color: white !important;
+  border-color: #6A0DAD !important;
+}
+
+.btn-outline-purple,
+.btn-outline-primary {
+  border-color: #6A0DAD !important;
+  color: #6A0DAD !important;
+}
+
+/* Card Shadow */
+.card {
+  background-color: white;
+  border-radius: 12px;
+  padding: 1rem;
+  box-shadow: 0 2px 8px rgba(0,0,0,0.1);
+}
+
+/* Dark Mode */
+body.dark {
+  background-color: #121212 !important;
+  color: #eaeaea !important;
+}
+
+body.dark .navbar {
+  background-color: #1e1e1e !important;
+}
+
+body.dark .card {
+  background-color: #1f1f1f !important;
+  color: #fff !important;
+}
+
+body.dark select,
+body.dark input,
+body.dark textarea {
+  background-color: #2b2b2b !important;
+  color: #fff !important;
+}
+
+
+
+/* Post Feed Container */
+.post-feed {
+  display: flex;
+  flex-direction: column;
+  gap: 20px;
+  padding-top: 1rem;
+}
+
+/* Post Card */
+.post-card {
+  background-color: #fff;
+  border-radius: 12px;
+  padding: 1rem;
+  box-shadow: 0 2px 8px rgba(0,0,0,0.1);
+  text-align: left;
+}
+
