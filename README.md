@@ -41,8 +41,3 @@ HobbyHive is a social platform where users can share and explore hobbies through
 
 ---
 
-##**Screenshots**
-
-![HobbyHive Screenshot]("C:\Users\afran\Documents\E- Comm\client\src\assets\Screenshot 2025-11-26 163728.png")
-
----
