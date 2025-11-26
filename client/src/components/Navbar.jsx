@@ -19,7 +19,7 @@ export default function Navbar({ onSearch, onCategorySelect }) {
       className="navbar shadow-sm sticky-top px-3 d-flex justify-content-between align-items-center"
       style={{ background: "#6f42c1" }}
     >
-      {/* Website Title */}
+      
       <h3
         className="m-0 fw-bold"
         style={{
@@ -32,10 +32,7 @@ export default function Navbar({ onSearch, onCategorySelect }) {
         HobbyHive
       </h3>
 
-      {/* Search + Category Filter */}
       <div className="d-flex align-items-center gap-2">
-
-        {/* SEARCH BOX */}
         <div className="input-group" style={{ width: "250px" }}>
           <span className="input-group-text" style={{ background: "white" }}>
             <FaSearch color="#6f42c1" />
@@ -48,8 +45,6 @@ export default function Navbar({ onSearch, onCategorySelect }) {
             onChange={(e) => onSearch(e.target.value)}
           />
         </div>
-
-        {/* CATEGORY FILTER */}
         <div className="dropdown">
           <button
             className="btn dropdown-toggle"
@@ -77,8 +72,6 @@ export default function Navbar({ onSearch, onCategorySelect }) {
             ))}
           </ul>
         </div>
-
-        {/* DARK / LIGHT MODE */}
         <button
           className="btn"
           style={{ color: "white" }}
