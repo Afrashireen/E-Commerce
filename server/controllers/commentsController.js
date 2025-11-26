@@ -1,6 +1,5 @@
 const pool = require("../db");
 
-// Get comments for a specific post
 exports.getComments = async (req, res) => {
   const postId = parseInt(req.params.postId);
 
@@ -24,7 +23,6 @@ exports.getComments = async (req, res) => {
   }
 };
 
-// Add new comment
 exports.addComment = async (req, res) => {
   const { post_id, name, comment, profile_pic } = req.body;
 
