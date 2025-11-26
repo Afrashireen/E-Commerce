@@ -11,7 +11,6 @@ export default function CommentSection({ postId }) {
     profile_pic: "https://images.unsplash.com/photo-1618599056968-4eefc008cef6?q=80&w=987&auto=format&fit=crop&ixlib=rb-4.1.0&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D"
   };
 
-  // Load comments
   const loadComments = async () => {
     try {
       const res = await axios.get(`${API}/comments/${postId}`);
@@ -25,7 +24,6 @@ export default function CommentSection({ postId }) {
     loadComments();
   }, [postId]);
 
-  // Add comment
   const addComment = async (e) => {
     e.preventDefault();
     if (!text.trim()) return;
@@ -47,7 +45,6 @@ export default function CommentSection({ postId }) {
 
   return (
     <div className="mt-3">
-      {/* Add Comment */}
       <form onSubmit={addComment} className="d-flex mb-2">
         <input
           className="form-control me-2"
@@ -61,7 +58,6 @@ export default function CommentSection({ postId }) {
         </button>
       </form>
 
-      {/* Comments List */}
       <div className="mt-3">
         {comments.map((c) => (
           <div key={c.comment_id} className="d-flex mb-2">
