@@ -1,11 +1,9 @@
-/* Global Theme */
 body {
   font-family: 'Poppins', sans-serif;
   margin: 0;
   background-color: #ffffff !important;   /* White background */
 }
 
-/* Purple Navbar */
 .navbar {
   display: flex;
   justify-content: space-between;
@@ -19,7 +17,6 @@ body {
   z-index: 1000;
 }
 
-/* Navbar Text */
 .navbar h3 {
   font-weight: 700;
   font-size: 1.7rem;
@@ -27,7 +24,6 @@ body {
   letter-spacing: 1px;
 }
 
-/* Search input inside navbar */
 .navbar .form-control {
   border: none !important;
   border-radius: 0;
@@ -37,7 +33,6 @@ body {
   border: none !important;
 }
 
-/* Purple Buttons */
 .btn-purple,
 .btn-primary {
   background-color: #6A0DAD !important;
@@ -51,7 +46,6 @@ body {
   color: #6A0DAD !important;
 }
 
-/* Card Shadow */
 .card {
   background-color: white;
   border-radius: 12px;
@@ -59,7 +53,6 @@ body {
   box-shadow: 0 2px 8px rgba(0,0,0,0.1);
 }
 
-/* Dark Mode */
 body.dark {
   background-color: #121212 !important;
   color: #eaeaea !important;
@@ -81,9 +74,6 @@ body.dark textarea {
   color: #fff !important;
 }
 
-
-
-/* Post Feed Container */
 .post-feed {
   display: flex;
   flex-direction: column;
@@ -91,7 +81,6 @@ body.dark textarea {
   padding-top: 1rem;
 }
 
-/* Post Card */
 .post-card {
   background-color: #fff;
   border-radius: 12px;
