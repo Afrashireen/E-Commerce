@@ -1,6 +1,5 @@
 const pool = require("../db");
 
-// Get all users
 exports.getUsers = async (req, res) => {
   try {
     const [users] = await pool.query("SELECT * FROM Users");
@@ -10,7 +9,6 @@ exports.getUsers = async (req, res) => {
   }
 };
 
-// Get single user by ID
 exports.getUserById = async (req, res) => {
   try {
     const [user] = await pool.query("SELECT * FROM Users WHERE user_id = ?", [req.params.id]);
