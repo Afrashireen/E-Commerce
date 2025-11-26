@@ -2,7 +2,6 @@ const express = require("express");
 const router = express.Router();
 const pool = require("../db");
 
-// ⭐ GET all posts (with user details + likes count)
 router.get("/", async (req, res) => {
   try {
     const [posts] = await pool.query(`
@@ -28,7 +27,6 @@ router.get("/", async (req, res) => {
   }
 });
 
-// ⭐ GET posts by user_id
 router.get("/user/:user_id", async (req, res) => {
   try {
     const userId = req.params.user_id;
@@ -57,7 +55,6 @@ router.get("/user/:user_id", async (req, res) => {
   }
 });
 
-// ⭐ GET posts by category
 router.get("/category/:category", async (req, res) => {
   try {
     const category = req.params.category;
@@ -86,7 +83,6 @@ router.get("/category/:category", async (req, res) => {
   }
 });
 
-// ⭐ CREATE NEW POST
 router.post("/", async (req, res) => {
   try {
     const { user_id, description, image_url, category } = req.body;
